@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "hermione gui tests/tests",
+    "test": "hermione gui tests",
     "start-server": "concurrently \"http-server -p 8080 --proxy http://localhost:8080\" \"selenium-standalone start\""
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "dependencies": {
     "chai": "^4.3.7",
     "hermione": "^6.0.0",
+    "html-reporter": "^9.7.3",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
