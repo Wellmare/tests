@@ -1,24 +1,19 @@
 module.exports = {
-    // gridUrl: 'http://localhost:8080',
-    baseUrl: 'http://localhost:8080',
-    sets: {
-        desktop: {
-            files: 'tests'
-        }
-    },
+    baseUrl: "http://localhost:3000",
 
     browsers: {
         chrome: {
-            automationProtocol: 'devtools',
+            automationProtocol: "devtools",
+
             desiredCapabilities: {
-                browserName: 'chrome'
+                browserName: "chrome"
             }
-        },
-        // edge: {
-        //     automationProtocol: 'devtools',
-        //     desiredCapabilities: {
-        //         browserName: 'edge'
-        //     }
-        // }
+        }
+    },
+
+    plugins : {
+        "html-reporter/hermione": {
+            path: "html-report"
+        }
     }
-};
+}
